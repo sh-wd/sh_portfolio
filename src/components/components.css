@@ -1,0 +1,129 @@
+.about-container, .study-work-container, .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+.contact-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-link {
+    position: fixed;
+    top: 3%;
+    right: 5%;
+    font-size: 1.5rem;
+}
+
+.home-link:hover {
+    color: #fff;
+}
+
+/* NavMenu Styling */
+
+.dropdown {
+    position: fixed;
+    top: 8%;
+    right: 5%;
+  }
+
+  .dropdown-content {
+    display: none;
+    background-color: #000;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #ff6700;
+    padding: 8px 0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #fff;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+
+.opening-line {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 17vw;
+    text-align: left;
+    margin: 0 0 0 10vw;
+}
+
+h2 {
+    font-size: 9vw;
+    margin: 5% 0;
+}
+
+img {
+    width: 100vw;
+}
+
+.logo {
+    width: 9vw;
+    height: 9vw;
+    margin: 0 5vw;
+}
+
+.contact-header {
+    color: #ff6700;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2vh 5vw;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 4vw;
+    margin: 1vh 7vw;
+}
+
+.grow {
+    transition-duration: 1s, 1s;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 425px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 39px;
+        margin: 20px 0;
+    }
+
+    .logo {
+        height: 39px;
+        width: 39px;
+        margin: 0 22px 0 5vw;
+    }
+
+    .contact-header {
+        margin: 14px 5vw;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}

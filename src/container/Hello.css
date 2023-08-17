@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    font-family: "Poppins";
+}
+
+.hello-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li, a {
+    text-align: left;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #ff6700;
+    font-size: 10vw;
+}
+
+a {
+    margin: 0;
+}
+
+.hello-link{
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bg-image {
+    background-image: url("../images/scott-bw.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    z-index: -9;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -10vw;
+}
+
+.animate {
+	-webkit-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(100%);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(30vh);}
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+
+.tap-indication {
+    color: #ff6700;
+    font-family: poppins;
+    animation: bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    100% {transform: translateY(-8px);}
+}
+
+/* ------ Delays ------ */
+.delay02 { -webkit-animation-delay: .2s; animation-delay: .2s;}
+.delay04 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+.delay06 { -webkit-animation-delay: .6s; animation-delay: .6s;}
+.delay08 { -webkit-animation-delay: .8s; animation-delay: .8s;}
+.delay10 { -webkit-animation-delay: 1s; animation-delay: 1s;}
+.delay12 { -webkit-animation-delay: 1.2s; animation-delay: 1.2s;}
+
+@media (min-width: 425px) {
+
+    .bg-image {
+        left: 15%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    li {
+        margin-left: 10vw;
+    }
+
+    .bg-image{
+        left: 35%;
+    }
+
+    li, a {
+        font-size: 77px;
+    }
+}
